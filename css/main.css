@@ -1,0 +1,339 @@
+* {
+  list-style: none;
+}
+button:not(.carousel-indicators [data-bs-target]){
+    background:linear-gradient(to left,#7C1C80,#F65F5E) ;
+    border: none;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+
+#platformOverview  .carousel-indicators [data-bs-target] ,#users .carousel-indicators [data-bs-target] {
+  background-color: var(--mainColor) !important;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+ 
+}
+h2.global-line{
+  position: relative;
+}
+h2.global-line::after{
+  content: '';
+  width: 79px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: -24px;
+  background-color: var(--mainColor);
+}
+.global-heading{
+    font-size: 38px;
+    margin-bottom: 29px;
+    color: var(--mainDarkColor);
+    font-weight: bold;
+}
+ 
+:root {
+  --mainColor: #ff6057;
+  --mainLightColor: #8f8f8f;
+  --mainDarkColor: #3b3a3a;
+}
+.ratingStar {
+  color: #cb4bf8;
+}
+.mainColor {
+  color: #ff6057 !important;
+}
+.main-p {
+  font-size: 14px;
+  margin-bottom: 27px;
+  color: var(--mainLightColor);
+}
+main{
+  outline: 1px solid transparent;
+}
+section {
+   margin: 40px 0;
+}
+section:not(#platform,#footer,#home) {
+  width: 75%;
+  margin-inline: auto;
+}
+/* ============================== */
+#home nav a{
+  color: #fff;
+}
+#home{
+  background-image: url('../images/Sans\ titre-1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100% ;
+  height: 80vh;
+  width: 100%;
+  color: #fff;
+  margin-top: 0;
+    padding: 20px;
+}
+#home .home-btn{
+  background: #fff;
+  color: var(--mainColor);
+}
+/* ============================== */
+#business {
+  padding: 40px;
+}
+
+.best-business p span {
+  display: inline-block;
+  margin-inline: 80px;
+}
+.business-info span {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* box-shadow: 0 0 15px #000000 */
+}
+
+#business p {
+  color: var(--mainLightColor);
+  font-size: 14px;
+  margin-top: 21px;
+}
+.business-info h6 {
+  margin-top: 16px;
+  position: relative;
+}
+.business-info h6::after {
+  content: "";
+  background-color: #ff6057;
+  width: 79px;
+  height: 3px;
+  position: absolute;
+  left: 0; 
+  bottom: -80%;
+ 
+}
+
+.business-info span img {
+  width: 25px;
+}
+.business-info .activity span {
+  background-color: #f1291e;
+}
+
+.business-info .bootcamps span {
+  background-color: #36c5ad;
+}
+
+.business-info .quality span {
+  background-color: #cb4bf8;
+}
+
+.business-info .certifcation span {
+  background-color: #56e65b;
+}
+
+/* =================================================== */
+#platform {
+  position: relative;
+  z-index: 9999;
+  left: -200px;
+
+}
+#platformTwo .platform-ifo h2 {
+  font-size: 38px;
+}
+
+#platform .platform-ifo h2,
+#platformTwo .platform-ifo h2 {
+  color: var(--mainDarkColor);
+  font-weight: bold;
+  margin-bottom: 52px;
+}
+#platform .rectangle{
+  position: absolute;
+  left: -50%;
+  top: 57%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+/* #platform .row{
+ 
+  background-image: url('../images/Rectangle\ 9.png');
+  background-repeat: no-repeat;
+  background-size: contain; 
+  min-height: 100vh;
+  background-position:-15%  ;
+ 
+ 
+}  */
+
+/* ========================================= */
+
+#platformOverview .platform-content-p {
+  color: var(--mainLightColor);
+  font-size: 28px;
+}
+#platformOverview .platform-content h2 {
+  color: var(--mainDarkColor);
+  margin-bottom: 18px;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+/* ========================================= */
+#platformTwo {
+  position: relative;
+  left: 150px;
+
+}
+ 
+#platformTwo .platform-ifo h2 {
+  margin-bottom: 49px;
+}
+
+#platformTwo .rectangle img{
+  position: absolute;
+  right: -230px;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+ 
+/* ========================================= */
+#growBusiness .growBusiness-paln .plan {
+  margin: 40px;
+
+}
+#growBusiness .growBusiness-paln span {
+  width: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 53px;
+  background-color: var(--mainColor);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#growBusiness .growBusiness-paln .plan-number span {
+  position: relative;
+  margin-right: 31px;
+}
+
+#growBusiness .growBusiness-paln .plan-number span:not(.last-span):after{
+content: ' ';
+/* display: inline-block; */
+height: 79px;
+width: 1px;
+background-color: var(--mainLightColor);
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+margin: 15px 0;
+top: 100%;
+
+}
+/* ================================ */
+#activityLog h2{
+    margin-bottom: 83px;
+}
+#activityLog .log-info h4{
+    color:var(--mainColor);
+    font-size: 46px;
+    font-weight: bold;
+
+}
+#activityLog .log-info p{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--mainDarkColor);
+
+}
+
+/* ================================ */
+
+#users ul li {
+  margin-inline: 5px;
+}
+
+#users .user-info h6 {
+  color: var(--mainDarkColor);
+  font-size: 24px;
+}
+#users .user-info span {
+  padding-bottom: 31px;
+  display: inline-block;
+}
+
+#users .user-info p,
+#users .user-info span {
+  color: var(--mainLightColor);
+}
+ 
+#users .user{
+   padding: 50px 15px;
+  box-shadow: 0 0 20px #000000;
+}
+#users .user{position: relative;}
+#users .carousel-indicators {
+  position: absolute;
+  bottom: -100px;
+}
+/* ============================= */
+#footer{
+  background-color: #333333;
+ color: #fff;
+ text-align: center;
+ margin-bottom: 0;
+ padding: 25px;
+}
+
+#footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer .services li{
+  padding-bottom: 5px;
+
+}
+
+ #footer .form-group{
+    position: relative;
+ } 
+
+ #footer .signup input{
+  padding: 10px 20px;
+ }
+ 
+
+ #footer .signup .subscribe{
+  background-color: var(--mainColor);
+  position: absolute;
+  width: 205px;
+  padding-block: 12px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  right: 0px;
+ } 
+#footer h6{
+ font-weight: bold;
+ font-size: 16px; 
+}
+#footer h2{
+  font-size: 48px;
+}
+ #footer h2 , #footer h6{
+  padding-bottom: 20px;
+ }
